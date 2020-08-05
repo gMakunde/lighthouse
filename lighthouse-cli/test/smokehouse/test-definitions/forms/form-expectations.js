@@ -85,6 +85,8 @@ const expectations = [
           ],
         },
         {
+          /** All Elements in this object are formless because attributes is undefined */
+          attributes: undefined,
           inputs: [
             {
               id: 'name_shipping',
