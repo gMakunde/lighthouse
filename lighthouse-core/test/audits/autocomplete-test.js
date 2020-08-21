@@ -63,41 +63,41 @@ describe('Best Practices: autocomplete audit', () => {
       headings: [
         {
           itemType: 'node',
-          key: 'failingElements',
+          key: 'node',
           text: 'lighthouse-core/lib/i18n/i18n.js | columnFailingElem # 0',
         },
       ],
       items: [
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="name_cc">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="CCNo">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
             snippet: '<select name="CCExpiresMonth">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
             snippet: '<select name="CCExpiresYear">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input name="cvc">',
             type: 'node',
@@ -168,41 +168,41 @@ describe('Best Practices: autocomplete audit', () => {
       headings: [
         {
           itemType: 'node',
-          key: 'failingElements',
+          key: 'node',
           text: 'lighthouse-core/lib/i18n/i18n.js | columnFailingElem # 0',
         },
       ],
       items: [
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="name_cc" autocomplete="namez">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="CCNo" autocomplete="ccc-num">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
             snippet: '<select name="CCExpiresMonth" autocomplete="ccc-exp">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
             snippet: '<select name="CCExpiresYear" autocomplete="none">',
             type: 'node',
           },
         },
         {
-          failingElements: {
+          node: {
             nodeLabel: 'input',
             snippet: '<input name="cvc" autocomplete="cc-cvc">',
             type: 'node',
