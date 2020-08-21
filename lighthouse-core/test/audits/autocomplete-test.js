@@ -20,8 +20,7 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'name_cc',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: null,
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input type="text" name="name_cc">',
             },
@@ -29,24 +28,21 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'CCNo',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: null,
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input type="text" name="CCNo">',
             },
             {
               id: '',
               name: 'CCExpiresMonth',
-              autocompleteProp: '',
-              autocompleteAttr: null,
+              autocomplete: '',
               nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
               snippet: '<select name="CCExpiresMonth">',
             },
             {
               id: '',
               name: 'CCExpiresYear',
-              autocompleteProp: '',
-              autocompleteAttr: null,
+              autocomplete: '',
               nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
               snippet: '<select name="CCExpiresYear">',
             },
@@ -54,8 +50,7 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'cvc',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: null,
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input name="cvc">',
             },
@@ -68,41 +63,41 @@ describe('Best Practices: autocomplete audit', () => {
       headings: [
         {
           itemType: 'node',
-          key: 'node',
+          key: 'failingElements',
           text: 'lighthouse-core/lib/i18n/i18n.js | columnFailingElem # 0',
         },
       ],
       items: [
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="name_cc">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="CCNo">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
             snippet: '<select name="CCExpiresMonth">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
             snippet: '<select name="CCExpiresYear">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input name="cvc">',
             type: 'node',
@@ -125,8 +120,8 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'name_cc',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: 'namez',
+              /* autocomplete attribute is blank because the gatherer does not collect invalid autocomplete attributes */
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input type="text" name="name_cc" autocomplete="namez">',
             },
@@ -134,24 +129,24 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'CCNo',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: 'ccc-num',
+              /* autocomplete attribute is blank because the gatherer does not collect invalid autocomplete attributes */
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input type="text" name="CCNo" autocomplete="ccc-num">',
             },
             {
               id: '',
               name: 'CCExpiresMonth',
-              autocompleteProp: '',
-              autocompleteAttr: 'ccc-exp',
+              /* autocomplete attribute is blank because the gatherer does not collect invalid autocomplete attributes */
+              autocomplete: '',
               nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
               snippet: '<select name="CCExpiresMonth" autocomplete="ccc-exp">',
             },
             {
               id: '',
               name: 'CCExpiresYear',
-              autocompleteProp: '',
-              autocompleteAttr: 'none',
+              /* autocomplete attribute is blank because the gatherer does not collect invalid autocomplete attributes */
+              autocomplete: '',
               nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
               snippet: '<select name="CCExpiresYear" autocomplete="none">',
             },
@@ -159,8 +154,8 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'cvc',
               placeholder: '',
-              autocompleteProp: '',
-              autocompleteAttr: 'cc-cvc',
+              /* autocomplete attribute is blank because the gatherer does not collect invalid autocomplete attributes */
+              autocomplete: '',
               nodeLabel: 'input',
               snippet: '<input name="cvc" autocomplete="cc-cvc">',
             },
@@ -173,41 +168,41 @@ describe('Best Practices: autocomplete audit', () => {
       headings: [
         {
           itemType: 'node',
-          key: 'node',
+          key: 'failingElements',
           text: 'lighthouse-core/lib/i18n/i18n.js | columnFailingElem # 0',
         },
       ],
       items: [
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="name_cc" autocomplete="namez">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input type="text" name="CCNo" autocomplete="ccc-num">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
             snippet: '<select name="CCExpiresMonth" autocomplete="ccc-exp">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
             snippet: '<select name="CCExpiresYear" autocomplete="none">',
             type: 'node',
           },
         },
         {
-          node: {
+          failingElements: {
             nodeLabel: 'input',
             snippet: '<input name="cvc" autocomplete="cc-cvc">',
             type: 'node',
@@ -230,8 +225,7 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'name_cc',
               placeholder: '',
-              autocompleteProp: 'cc-name',
-              autocompleteAttr: 'cc-name',
+              autocomplete: 'cc-name',
               nodeLabel: 'textarea',
               snippet: '<textarea type="text" name="name_cc" autocomplete="cc-name">',
             },
@@ -239,24 +233,21 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'CCNo',
               placeholder: '',
-              autocompleteProp: 'cc-number',
-              autocompleteAttr: 'cc-number',
+              autocomplete: 'cc-number',
               nodeLabel: 'input',
               snippet: '<input type="text" name="CCNo" autocomplete="cc-number">',
             },
             {
               id: '',
               name: 'CCExpiresMonth',
-              autocompleteProp: 'cc-exp-year',
-              autocompleteAttr: 'cc-exp-year',
+              autocomplete: 'cc-exp-month',
               nodeLabel: 'MM\n01\n02\n03\n04\n05\n06\n07\n08\n09\n10\n11\n12',
               snippet: '<select name="CCExpiresMonth" autocomplete="cc-exp-month">',
             },
             {
               id: '',
               name: 'CCExpiresYear',
-              autocompleteProp: 'cc-exp-year',
-              autocompleteAttr: 'cc-exp-year',
+              autocomplete: 'cc-exp-year',
               nodeLabel: 'YY\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029',
               snippet: '<select name="CCExpiresYear" autocomplete="cc-exp-year">',
             },
@@ -264,8 +255,7 @@ describe('Best Practices: autocomplete audit', () => {
               id: '',
               name: 'cvc',
               placeholder: '',
-              autocompleteProp: 'cc-csc',
-              autocompleteAttr: 'cc-csc',
+              autocomplete: 'cc-csc',
               nodeLabel: 'input',
               snippet: '<input name="cvc" autocomplete="cc-csc">',
             },
