@@ -125,6 +125,7 @@ describe('Best Practices: autocomplete audit', () => {
       },
     ];
     const {score, details} = Autocomplete.audit(artifacts);
+    expect(expectedItems[0].suggestion).toBeDisplayString('Requires manual review.');
     expect(score).toBe(0);
     expect(details.items).toStrictEqual(expectedItems);
   });
@@ -360,6 +361,12 @@ describe('Best Practices: autocomplete audit', () => {
       'lighthouse-core/audits/autocomplete.js | warningInvalid # 1',
     ];
     const {warnings} = Autocomplete.audit(artifacts);
+
+    // eslint-disable-next-line max-len
+    expect(warnings[0]).toBeDisplayString('Autocomplete token(s): "namez" is invalid in <input type="text" name="name_cc" autocomplete="namez">');
+    // eslint-disable-next-line max-len
+    expect(warnings[1]).toBeDisplayString('Autocomplete token(s): "ccc-num" is invalid in <input type="text" name="CCNo" autocomplete="ccc-num">');
+
     expect(warnings).toStrictEqual(expectedWarnings);
   });
 
@@ -406,6 +413,15 @@ describe('Best Practices: autocomplete audit', () => {
       'lighthouse-core/audits/autocomplete.js | warningOrder # 1',
     ];
     const {warnings} = Autocomplete.audit(artifacts);
+    // eslint-disable-next-line max-len
+    expect(warnings[0]).toBeDisplayString('Autocomplete token(s): "shipping section-red cc-name" is invalid in <textarea type="text" name="name_cc2" autocomplete="shipping section-red cc-name">');
+    // eslint-disable-next-line max-len
+    expect(warnings[1]).toBeDisplayString('Review order of tokens: "shipping section-red cc-name" in <textarea type="text" name="name_cc2" autocomplete="shipping section-red cc-name">');
+    // eslint-disable-next-line max-len
+    expect(warnings[2]).toBeDisplayString('Autocomplete token(s): "shipping section-red mobile tel" is invalid in <input type="text" name="CCNo2" autocomplete="shipping section-red mobile tel">');
+    // eslint-disable-next-line max-len
+    expect(warnings[3]).toBeDisplayString('Review order of tokens: "shipping section-red mobile tel" in <input type="text" name="CCNo2" autocomplete="shipping section-red mobile tel">');
+
     expect(warnings).toStrictEqual(expectedWarnings);
   });
 });
