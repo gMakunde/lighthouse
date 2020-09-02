@@ -242,6 +242,7 @@ const defaultConfig = {
     'no-unload-listeners',
     'non-composited-animations',
     'unsized-images',
+    'autocomplete',
     'large-javascript-libraries',
     'valid-source-maps',
     'manual/pwa-cross-browser',
@@ -574,6 +575,7 @@ const defaultConfig = {
         {id: 'deprecations', weight: 1, group: 'best-practices-general'},
         {id: 'errors-in-console', weight: 1, group: 'best-practices-general'},
         {id: 'valid-source-maps', weight: 0, group: 'best-practices-general'},
+        {id: 'autocomplete', weight: 0, group: 'best-practices-ux'},
       ],
     },
     'seo': {
