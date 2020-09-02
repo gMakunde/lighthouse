@@ -430,7 +430,7 @@ const expectations = [
                     '<textarea type="text" id="name_cc1" name="name_cc1" autocomplete="sectio-red shipping cc-namez" placeholder="John Doe">',
                   nodeLabel: 'textarea',
                 },
-                suggestion: 'Requires manual review.',
+                suggestion: 'Requires manual review',
                 current: 'sectio-red shipping cc-namez',
               },
               {
@@ -488,7 +488,7 @@ const expectations = [
                     '<input type="text" id="city_billing" name="city_billing" placeholder="city you live in" autocomplete="section-red shipping ">',
                   nodeLabel: 'input',
                 },
-                suggestion: 'Requires manual review.',
+                suggestion: 'Requires manual review',
                 current: 'section-red shipping ',
               },
               {
