@@ -26,10 +26,10 @@ const UIStrings = {
    'effort, consider enabling autocomplete by setting the `autocomplete` ' +
    'attribute to a valid value.' +
   ' [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)',
-  /** Label for a column in a data table; entries will be the token suggestions based on heuristics. */
-  columnAutocompleteSuggestions: 'Autocomplete Suggested Token',
-  /** Label for a column in a data table; entries will be the incorrect optional tokens or prompting user to review them. */
-  columnAutocompleteCurrent: 'Autocomplete Current Value',
+  /** Label for a column in a data table; entries will be the autocomplete token suggestions based on heuristics. */
+  columnSuggestions: 'Autocomplete Suggested Token',
+  /** Label for a column in a data table; entries will be the incorrect optional autocomplete tokens or prompting user to review them. */
+  columnCurrent: 'Autocomplete Current Value',
   /**
    * @description Warning that autocomplete token is invalid.
    * @example {invalid-token name} token
@@ -274,8 +274,8 @@ class AutocompleteAudit extends Audit {
     /** @type {LH.Audit.Details.Table['headings']} */
     const headings = [
       {key: 'node', itemType: 'node', text: str_(i18n.UIStrings.columnFailingElem)},
-      {key: 'current', itemType: 'text', text: str_(UIStrings.columnAutocompleteCurrent)},
-      {key: 'suggestion', itemType: 'text', text: str_(UIStrings.columnAutocompleteSuggestions)},
+      {key: 'current', itemType: 'text', text: str_(UIStrings.columnCurrent)},
+      {key: 'suggestion', itemType: 'text', text: str_(UIStrings.columnSuggestions)},
     ];
     const details = Audit.makeTableDetails(headings, failingFormsData);
     let displayValue;

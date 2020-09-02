@@ -383,10 +383,10 @@
   "lighthouse-core/audits/apple-touch-icon.js | title": {
     "message": "Provides a valid `apple-touch-icon`"
   },
-  "lighthouse-core/audits/autocomplete.js | columnAutocompleteCurrent": {
+  "lighthouse-core/audits/autocomplete.js | columnCurrent": {
     "message": "Autocomplete Current Value"
   },
-  "lighthouse-core/audits/autocomplete.js | columnAutocompleteSuggestions": {
+  "lighthouse-core/audits/autocomplete.js | columnSuggestions": {
     "message": "Autocomplete Suggested Token"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
@@ -396,7 +396,7 @@
     "message": "Input elements do not have correct attributes for autocomplete"
   },
   "lighthouse-core/audits/autocomplete.js | manualReview": {
-    "message": "Requires manual review."
+    "message": "Requires manual review"
   },
   "lighthouse-core/audits/autocomplete.js | reviewOrder": {
     "message": "Review order of tokens"

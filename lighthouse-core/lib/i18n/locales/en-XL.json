@@ -383,10 +383,10 @@
   "lighthouse-core/audits/apple-touch-icon.js | title": {
     "message": "P̂ŕôv́îd́êś â v́âĺîd́ `apple-touch-icon`"
   },
-  "lighthouse-core/audits/autocomplete.js | columnAutocompleteCurrent": {
+  "lighthouse-core/audits/autocomplete.js | columnCurrent": {
     "message": "Âút̂óĉóm̂ṕl̂ét̂é Ĉúr̂ŕêńt̂ V́âĺûé"
   },
-  "lighthouse-core/audits/autocomplete.js | columnAutocompleteSuggestions": {
+  "lighthouse-core/audits/autocomplete.js | columnSuggestions": {
     "message": "Âút̂óĉóm̂ṕl̂ét̂é Ŝúĝǵêśt̂éd̂ T́ôḱêń"
   },
   "lighthouse-core/audits/autocomplete.js | description": {
@@ -396,7 +396,7 @@
     "message": "Îńp̂út̂ él̂ém̂én̂t́ŝ d́ô ńôt́ ĥáv̂é ĉór̂ŕêćt̂ át̂t́r̂íb̂út̂éŝ f́ôŕ âút̂óĉóm̂ṕl̂ét̂é"
   },
   "lighthouse-core/audits/autocomplete.js | manualReview": {
-    "message": "R̂éq̂úîŕêś m̂án̂úâĺ r̂év̂íêẃ."
+    "message": "R̂éq̂úîŕêś m̂án̂úâĺ r̂év̂íêẃ"
   },
   "lighthouse-core/audits/autocomplete.js | reviewOrder": {
     "message": "R̂év̂íêẃ ôŕd̂ér̂ óf̂ t́ôḱêńŝ"
