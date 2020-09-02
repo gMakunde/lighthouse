@@ -172,6 +172,9 @@ Object {
       "path": "unsized-images",
     },
     Object {
+      "path": "autocomplete",
+    },
+    Object {
       "path": "large-javascript-libraries",
     },
     Object {
@@ -798,6 +801,11 @@ Object {
         Object {
           "group": "best-practices-general",
           "id": "valid-source-maps",
+          "weight": 0,
+        },
+        Object {
+          "group": "best-practices-ux",
+          "id": "autocomplete",
           "weight": 0,
         },
       ],
