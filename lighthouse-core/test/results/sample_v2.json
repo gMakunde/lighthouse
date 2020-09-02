@@ -2032,6 +2032,14 @@
         ]
       }
     },
+    "autocomplete": {
+      "id": "autocomplete",
+      "title": "Input elements use autocomplete",
+      "description": "Autocomplete helps users submit forms quicker. To reduce user effort, consider enabling autocomplete by setting the `autocomplete` attribute to a valid value. [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "errorMessage": "Required FormElements gatherer did not run."
+    },
     "large-javascript-libraries": {
       "id": "large-javascript-libraries",
       "title": "Avoids large JavaScript libraries with smaller alternatives",
@@ -4910,6 +4918,11 @@
           "id": "valid-source-maps",
           "weight": 0,
           "group": "best-practices-general"
+        },
+        {
+          "id": "autocomplete",
+          "weight": 0,
+          "group": "best-practices-ux"
         }
       ],
       "id": "best-practices",
@@ -5729,6 +5742,12 @@
       {
         "startTime": 0,
         "name": "lh:audit:unsized-images",
+        "duration": 100,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 0,
+        "name": "lh:audit:autocomplete",
         "duration": 100,
         "entryType": "measure"
       },
@@ -7086,6 +7105,21 @@
         "audits[link-name].details.headings[0].text",
         "audits[object-alt].details.headings[0].text",
         "audits[password-inputs-can-be-pasted-into].details.headings[0].text"
+      ],
+      "lighthouse-core/audits/autocomplete.js | title": [
+        "audits.autocomplete.title"
+      ],
+      "lighthouse-core/audits/autocomplete.js | description": [
+        "audits.autocomplete.description"
+      ],
+      "lighthouse-core/lib/lh-error.js | missingRequiredArtifact": [
+        {
+          "values": {
+            "errorCode": "MISSING_REQUIRED_ARTIFACT",
+            "artifactName": "FormElements"
+          },
+          "path": "audits.autocomplete.errorMessage"
+        }
       ],
       "lighthouse-core/audits/large-javascript-libraries.js | title": [
         "audits[large-javascript-libraries].title"
