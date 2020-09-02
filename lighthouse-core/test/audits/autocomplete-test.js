@@ -125,7 +125,7 @@ describe('Best Practices: autocomplete audit', () => {
       },
     ];
     const {score, details} = Autocomplete.audit(artifacts);
-    expect(expectedItems[0].suggestion).toBeDisplayString('Requires manual review.');
+    expect(expectedItems[0].suggestion).toBeDisplayString('Requires manual review');
     expect(score).toBe(0);
     expect(details.items).toStrictEqual(expectedItems);
   });
