@@ -26,9 +26,9 @@ const UIStrings = {
    'effort, consider enabling autocomplete by setting the `autocomplete` ' +
    'attribute to a valid value.' +
   ' [Learn more](https://developers.google.com/web/fundamentals/design-and-ux/input/forms#use_metadata_to_enable_auto-complete)',
-  /** Label for a column in a data table; entries will be the autocomplete token suggestions based on heuristics. */
+  /** Label for a column in a data table; entries will be the token suggestions based on heuristics. */
   columnAutocompleteSuggestions: 'Autocomplete Suggested Token',
-  /** Label for a column in a data table; entries will be the incorrect autocomplete prefix tokens or prompting user to review them. */
+  /** Label for a column in a data table; entries will be the incorrect optional tokens or prompting user to review them. */
   columnAutocompleteCurrent: 'Autocomplete Current Value',
   /**
    * @description Warning that autocomplete token is invalid.
@@ -45,7 +45,7 @@ const UIStrings = {
   /** Entry for under the Autocomplete Suggested Token Column that tells users to review the ordering of their tokens if they are valid. */
   reviewOrder: 'Review order of tokens',
   /** Entry for under the Autocomplete Suggested Token Column that appears when we have no autocomplete suggestion. */
-  manualReview: 'Requires manual review.',
+  manualReview: 'Requires manual review',
 };
 
 const str_ = i18n.createMessageInstanceIdFn(__filename, UIStrings);
@@ -252,7 +252,7 @@ class AutocompleteAudit extends Audit {
             snippet: input.snippet}));
           suggestion = UIStrings.reviewOrder;
         }
-        // If the autofill prediction is not in our autofill suggestion mapping, then we want to create a warning
+        // If the autofill prediction is not in our autofill suggestion mapping, then we warn
         if (!(input.autocomplete.prediction in predictionTypesToTokens) &&
             validity.isValidOrder) {
           log.warn(`Autocomplete prediction (${input.autocomplete.prediction})
